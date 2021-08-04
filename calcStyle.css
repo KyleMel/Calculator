@@ -7,3 +7,12 @@
     border-radius: 10px;
     text-align: center;
 }
+.button {
+    border-radius: 10px; 
+    background-color: rgb(253, 215, 170);
+    border: 3px solid black;
+    font-size: xx-large;
+    font-family: fantasy;
+    transition-duration: .3s;
+    cursor: grab;
+}
