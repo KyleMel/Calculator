@@ -25,3 +25,12 @@
 .button3 {
     grid-column: 2 / 4;
 }
+.button2:hover  {
+    background-color:black;
+    color: white;
+}
+
+.button3:hover  {
+    background-color:black;
+    color: white;
+}
