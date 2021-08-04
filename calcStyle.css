@@ -1,0 +1,9 @@
+.calculator-base {
+    background-color:orange;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    position: fixed;
+    padding: 15px;
+    border-radius: 10px;
+    text-align: center;
+}
