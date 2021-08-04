@@ -16,3 +16,12 @@
     transition-duration: .3s;
     cursor: grab;
 }
+.button1  {
+    grid-column: 1 / 4;
+    content: white;
+    text-align: right;
+    padding-right: 10%;
+}
+.button3 {
+    grid-column: 2 / 4;
+}
