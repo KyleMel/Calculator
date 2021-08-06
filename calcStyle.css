@@ -1,11 +1,16 @@
+.center {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
 .calculator-base {
     background-color:orange;
     display: grid;
     grid-template-columns: auto auto auto;
-    position: fixed;
     padding: 15px;
     border-radius: 10px;
-    text-align: center;
+
 }
 .button {
     border-radius: 10px; 
