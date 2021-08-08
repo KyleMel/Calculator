@@ -7,16 +7,16 @@
 .calculator-base {
     background-color:orange;
     border: 5px solid black;
+    border-radius: 10px;
     height: 400px;
+    padding: 8px;
     display: grid;
     grid-template-columns: auto auto auto;
-    padding: 8px;
-    border-radius: 10px;
 }
 .button {
-    border-radius: 10px; 
     background-color: rgb(253, 215, 170);
     border: 3px solid black;
+    border-radius: 10px; 
     font-size: x-large;
     font-family: fantasy;
     transition-duration: .3s;
@@ -24,12 +24,12 @@
 }
 .button1  {
     grid-column: 1 / 4;
+    border-width: 10px;
+    padding: 1%;
     font-weight: bold;
     text-align: right;
     font-size: x-large;
     box-sizing: border-box;
-    border-width: 10px;
-    padding: 1%;
 }
 .button3 {
     grid-column: 2 / 4;
