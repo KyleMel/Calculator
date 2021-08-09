@@ -1,10 +1,3 @@
-/* How I center the whole calculator */
-.center {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-}
 .calculator-base {
     background-color:orange;
     border: 5px solid black;
@@ -13,6 +6,10 @@
     grid-template-columns: auto auto auto;
     height: 400px;
     padding: 8px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
 /* base design for all buttons */
 .button {
