@@ -1,3 +1,4 @@
+/* How I center the whole calculator */
 .center {
     position: absolute;
     top: 50%;
@@ -8,37 +9,35 @@
     background-color:orange;
     border: 5px solid black;
     border-radius: 10px;
-    height: 400px;
-    padding: 8px;
     display: grid;
     grid-template-columns: auto auto auto;
+    height: 400px;
+    padding: 8px;
 }
+/* base design for all buttons */
 .button {
     background-color: rgb(253, 215, 170);
     border: 3px solid black;
     border-radius: 10px; 
+    cursor: grab;
     font-size: x-large;
     font-family: fantasy;
     transition-duration: .3s;
-    cursor: grab;
 }
-.button1  {
-    grid-column: 1 / 4;
+.output  {
     border-width: 10px;
-    padding: 1%;
-    font-weight: bold;
+    box-sizing: border-box;
     text-align: right;
     font-size: x-large;
-    box-sizing: border-box;
+    font-weight: bold;
+    grid-column: 1 / 4;
+    padding: 1%;
 }
-.button3 {
+/* stretches equal sign across bottom */
+.buttonEq {
     grid-column: 2 / 4;
 }
-.button2:hover  {
-    background-color:black;
-    color: white;
-}
-.button3:hover  {
+.button:hover  {
     background-color:black;
     color: white;
 }
