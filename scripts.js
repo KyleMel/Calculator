@@ -1,5 +1,5 @@
 var equal = document.querySelector('[ja-equal-button')
-var allclear = document.querySelector('[js-all-clear-button]')
+var allClear = document.querySelector('[js-clear-button]')
 var numberButton = document.querySelectorAll('[js-number-button')
 var previousNumber = document.querySelector('[js-previous-number]')
 var currentNumber = document.querySelector('[js-current-number]')
@@ -11,7 +11,7 @@ class Calculator {
         this.clear()
     }
     displayOutput(number) {
-        this.currentNum = number
+        this.currentNum = this.currentNum.toString() + number.toString()
     }
     updateDisplay() {
         this.currentNumber.innerText = this.currentNum
@@ -45,4 +45,8 @@ numberButton.forEach(button => {
         calculator.displayOutput(button.innerText)
         calculator.updateDisplay()
     })
+})
+allClear.addEventListener('click' , button => {
+        calculator.clear()
+        calculator.updateDisplay()
 })
