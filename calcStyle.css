@@ -32,6 +32,8 @@ body {
   grid-column: 1 /-1;
   border-width: 10px;
   background-color: rgba(253, 215, 175, 0.75);
+  font-size: x-large;
+  font-family: fantasy;
   border-radius: 10px;
   display: flex;
   align-items: center;

@@ -1,18 +1,25 @@
-const output = document.querySelector('[js-output]')
-const equal = document.querySelector('[ja-equal-button')
-const allclear = document.querySelector('[js-all-clear-button]')
-const numberButton = document.querySelectorAll('[js-number-button')
-
+var equal = document.querySelector('[ja-equal-button')
+var allclear = document.querySelector('[js-all-clear-button]')
+var numberButton = document.querySelectorAll('[js-number-button')
+var previousNumber = document.querySelector('[js-previous-number]')
+var currentNumber = document.querySelector('[js-current-number]')
 
 class Calculator {
-    constructor(previousNum, currentNum){
-        
+    constructor(previousNumber, currentNumber){
+        this.previousNumber = previousNumber
+        this.currentNumber = currentNumber
+        this.clear()
     }
-
-    displayOutput() {
+    displayOutput(number) {
+        this.currentNum = number
+    }
+    updateDisplay() {
+        this.currentNumber.innerText = this.currentNum
+    }
+    clearOutput() {
 
     }
-    Computation() {
+    /* Computation() {
         switch (number) {
             case '+':
                 break
@@ -25,5 +32,17 @@ class Calculator {
             default:
                 return
         }
+    } */
+    clear() {
+        this.currentNum = ''
+        this.previousNum = ''
     }
 }
+
+const calculator = new Calculator(previousNumber, currentNumber)
+numberButton.forEach(button => {
+    button.addEventListener('click' , () => {
+        calculator.displayOutput(button.innerText)
+        calculator.updateDisplay()
+    })
+})
