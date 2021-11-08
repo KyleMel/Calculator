@@ -3,6 +3,7 @@
 <head>
     <title>Kyles Cool Calculator</title>
     <link rel="stylesheet" href="calcStyle.css">
+    <script src="scripts.js" defer></script>
 </head>
 <body>
     <h1 class ="makecenter">Calculator</h1>
@@ -14,23 +15,26 @@
         <li>Mutliples</li>
     </ul>
 
-     <div id="calculator-base"> <!-- a platform for the calculator buttons -->
-        <input type="text" id="output" value="0   "> <!-- to satisfy the input requirement -->
-        <button class="button">1</button>
-        <button class="button">2</button>
-        <button class="button">3</button>
-        <button class="button">4</button>
-        <button class="button">5</button>
-        <button class="button">6</button>
-        <button class="button">7</button>
-        <button class="button">8</button>
-        <button class="button">9</button>
-        <button class="button">x</button>
-        <button class="button">/</button>
-        <button class="button">+</button>
-        <button class="button">-</button>
-        <button class="button">AC</button>
-        <button class="button">=</button>
+     <div id="calculator-base">
+        <div js-output type="text" id="output"> 
+            <div js-current-number>100</div>
+            <div js-previous-number>200</div>
+        </div>
+        <button js-number-button>1</button>
+        <button js-number-button>2</button>
+        <button js-number-button>3</button>
+        <button js-number-button>4</button>
+        <button js-number-button>5</button>
+        <button js-number-button>6</button>
+        <button js-number-button>7</button>
+        <button js-number-button>8</button>
+        <button js-number-button>9</button>
+        <button js-operation-button>x</button>
+        <button js-operation-button>/</button>
+        <button js-operation-button>+</button>
+        <button js-operation-button>-</button>
+        <button js-clear-button>AC</button>
+        <button js-equal-button>=</button>
      </div>
     <footer class ="makecenter"><a href="https://github.com/KyleMel/HTMLCalculator.git">Calculator GitHub Repo</a></footer>
 </body>
